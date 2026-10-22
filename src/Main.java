@@ -7,5 +7,12 @@ Book b1= new Book ("Dune", "Frank Herbert", "111", 1965);
         System.out.println(b1.getAuthor());
         System.out.println(b2.getAuthor());
         System.out.println(b1.toString());
+
+        Member m1 = new Member(1, "Yamen");
+
+        System.out.println(m1);              // Yamen (ID: 1) - holding 0 book(s)
+        m1.addBook(b1);
+        System.out.println(m1);              // Yamen (ID: 1) - holding 1 book(s)
+        System.out.println(m1.canBorrow());  // true
     }
 }
